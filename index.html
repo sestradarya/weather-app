@@ -9,9 +9,84 @@
       href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <a href="" class="logo">
+          <img
+            src="./assets/icons8-weather-64.png"
+            width="58"
+            height="58"
+            alt=""
+          />
+        </a>
+
+        <div class="search-view active" data-search-view>
+          <div class="search-wrapper">
+            <input
+              type="search"
+              name="search"
+              placeholder="Search"
+              class="search-field"
+              autocomplete="'off"
+              data-search-field
+            />
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <button
+              class="icon-btn leading-icon has-state"
+              aria-label="close search"
+              data-search-toggler
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+          </div>
+
+          <div class="search-result" data-search-result>
+            <ul class="view-list" data-search-list>
+              <li class="view-item">
+                <i class="fa-solid fa-location-dot"></i>
+
+                <div>
+                  <p class="item-title">London</p>
+
+                  <p class="item-subtitle label-2">State of London, GB</p>
+                </div>
+
+                <a href="#" class="item-link has-state" data-search-toggler></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <button
+            class="icon-btn has-state"
+            aria-label="open search"
+            data-search-toggler
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+
+          <a
+            href="#/current-location"
+            class="btn-primary has-state"
+            data-current-location-btn
+          >
+            <i class="fa-solid fa-location-crosshairs"></i>
+
+            <span class="span">Current Location</span>
+          </a>
+        </div>
+      </div>
+    </header>
 
     <script src="./js/script.js" type="module"></script>
   </body>
