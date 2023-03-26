@@ -27,7 +27,7 @@
           />
         </a>
 
-        <div class="search-view active" data-search-view>
+        <div class="search-view" data-search-view>
           <div class="search-wrapper">
             <input
               type="search"
@@ -82,11 +82,130 @@
           >
             <i class="fa-solid fa-location-crosshairs"></i>
 
-            <span class="span">Current Location</span>
+            <span class="span"></span>
           </a>
         </div>
       </div>
     </header>
+
+    <main>
+      <article class="container">
+        <div class="content-left">
+          <section
+            class="section current-weather"
+            aria-label="current weather"
+            data-current-weather
+          >
+            <div class="card card-lg current-weather-card">
+              <h2 class="title-2 card-title">Now</h2>
+
+              <div class="wrapper">
+                <div class="heading">25&deg;c</div>
+
+                <img
+                  src="assets/icons8-weather-48.png"
+                  alt="Overcast Clouds"
+                  width="64"
+                  height="64"
+                  class="weather-icon"
+                />
+              </div>
+
+              <p class="body-3">Overcast Clouds</p>
+
+              <ul class="meta-list">
+                <li class="meta-item">
+                  <i class="fa-regular fa-calendar"></i>
+
+                  <p class="title-3 meta-text">Sunday, 26, Mar</p>
+                </li>
+                <li class="meta-item">
+                  <i class="fa-solid fa-location-dot"></i>
+
+                  <p class="title-3 meta-text">London, GB</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+
+
+          <section class="section forecast" aria-label="forecast" data-5-day-forecast>
+            <h2 class="title-2" id="forecast-label">5 Days Forecast</h2>
+
+            <div class="card card-lg forecast-card">
+              <ul>
+                <li class="card-item">
+                  <div class="icon-wrapper">
+                    <img src="./assets/icons8-weather-65.png" alt="Overcast Clouds" height="36" width="36" class="weather-icon">
+
+                    <span class="span">
+                      <p class="title-2">25</p>
+                    </span>
+                  </div>
+
+                  <p class="label-1">27 Mar</p>
+
+                  <p class="label-1">Monday</p>
+                </li>
+                <li class="card-item">
+                  <div class="icon-wrapper">
+                    <img src="./assets/icons8-weather-65.png" alt="Overcast Clouds" height="36" width="36" class="weather-icon">
+
+                    <span class="span">
+                      <p class="title-2">25</p>
+                    </span>
+                  </div>
+
+                  <p class="label-1">27 Mar</p>
+
+                  <p class="label-1">Monday</p>
+                </li>
+                <li class="card-item">
+                  <div class="icon-wrapper">
+                    <img src="./assets/icons8-weather-65.png" alt="Overcast Clouds" height="36" width="36" class="weather-icon">
+
+                    <span class="span">
+                      <p class="title-2">25</p>
+                    </span>
+                  </div>
+
+                  <p class="label-1">27 Mar</p>
+
+                  <p class="label-1">Monday</p>
+                </li>
+                <li class="card-item">
+                  <div class="icon-wrapper">
+                    <img src="./assets/icons8-weather-65.png" alt="Overcast Clouds" height="36" width="36" class="weather-icon">
+
+                    <span class="span">
+                      <p class="title-2">25</p>
+                    </span>
+                  </div>
+
+                  <p class="label-1">27 Mar</p>
+
+                  <p class="label-1">Monday</p>
+                </li>
+                <li class="card-item">
+                  <div class="icon-wrapper">
+                    <img src="./assets/icons8-weather-65.png" alt="Overcast Clouds" height="36" width="36" class="weather-icon">
+
+                    <span class="span">
+                      <p class="title-2">25</p>
+                    </span>
+                  </div>
+
+                  <p class="label-1">27 Mar</p>
+
+                  <p class="label-1">Monday</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </article>
+    </main>
 
     <script src="./js/script.js" type="module"></script>
   </body>
