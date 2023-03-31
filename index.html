@@ -49,20 +49,8 @@
             </button>
           </div>
 
-          <div class="search-result" data-search-result>
-            <ul class="view-list" data-search-list>
-              <li class="view-item">
-                <i class="fa-solid fa-location-dot"></i>
-
-                <div>
-                  <p class="item-title">London</p>
-
-                  <p class="item-subtitle label-2">State of London, GB</p>
-                </div>
-
-                <a href="#" class="item-link has-state" data-search-toggler></a>
-              </li>
-            </ul>
+          <div class="search-result " data-search-result>
+            
           </div>
         </div>
 
@@ -89,7 +77,7 @@
     </header>
 
     <main>
-      <article class="container">
+      <article class="container" data-container="">
         <div class="content-left">
           <section
             class="section current-weather"
@@ -97,34 +85,7 @@
             data-current-weather
           >
             <div class="card card-lg current-weather-card">
-              <h2 class="title-2 card-title">Now</h2>
-
-              <div class="wrapper">
-                <div class="heading">25&deg;c</div>
-
-                <img
-                  src="assets/icons8-weather-48.png"
-                  alt="Overcast Clouds"
-                  width="64"
-                  height="64"
-                  class="weather-icon"
-                />
-              </div>
-
-              <p class="body-3">Overcast Clouds</p>
-
-              <ul class="meta-list">
-                <li class="meta-item">
-                  <i class="fa-regular fa-calendar"></i>
-
-                  <p class="title-3 meta-text">Sunday, 26, Mar</p>
-                </li>
-                <li class="meta-item">
-                  <i class="fa-solid fa-location-dot"></i>
-
-                  <p class="title-3 meta-text">London, GB</p>
-                </li>
-              </ul>
+              
             </div>
           </section>
 
@@ -243,104 +204,6 @@
             aria-labelledby="highlights-label"
             data-highlights
           >
-            <div class="card card-lg">
-              <h2 class="title-2" id="highlights-label">Today highlights</h2>
-
-              <div class="highlight-list">
-                <div class="card card-sm highlight-card one">
-                  <h3 class="title-3">Air Quality Index</h3>
-
-                  <div class="wrapper">
-                    <i class="fa-solid fa-wind"></i>
-
-                    <ul class="card-list">
-                      <li class="card-item">
-                        <p class="title-1">23.3</p>
-                        <p class="label-1">PM <sub>2.5</sub></p>
-                      </li>
-                      <li class="card-item">
-                        <p class="title-1">23.3</p>
-                        <p class="label-1">PM <sub>2.5</sub></p>
-                      </li>
-                      <li class="card-item">
-                        <p class="title-1">23.3</p>
-                        <p class="label-1">PM <sub>2.5</sub></p>
-                      </li>
-                      <li class="card-item">
-                        <p class="title-1">23.3</p>
-                        <p class="label-1">PM <sub>2.5</sub></p>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <span class="badge aqi-1 label-1" title="aqi-message">
-                    Good
-                  </span>
-                </div>
-
-                <div class="card card-sm highlight-card two">
-                  <h3 class="title-3">Sunrise and sunset</h3>
-                  <div class="card-list">
-                    <div class="card-item">
-                      <i class="fa-regular fa-sun"></i>
-                      <div>
-                        <p class="label-1">Sunrise</p>
-                        <p class="title-1">6:30 AM</p>
-                      </div>
-                    </div>
-
-                    <div class="card-item">
-                      <i class="fa-regular fa-moon"></i>
-
-                      <div>
-                        <p class="label-1">Sunset</p>
-                        <p class="title-1">5:54 PM</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card-sm highlight-card">
-                  <h3 class="title-3">Humidity</h3>
-
-                  <div class="wrapper">
-                    <i class="fa-solid fa-droplet"></i>
-
-                    <p class="title-1">35 %</p>
-                  </div>
-                </div>
-
-                <div class="card-sm highlight-card">
-                  <h3 class="title-3">Pressure</h3>
-
-                  <div class="wrapper">
-                    <i class="fa-solid fa-tower-cell"></i>
-
-                    <p class="title-1">1052 hPa</p>
-                  </div>
-                </div>
-
-                <div class="card-sm highlight-card">
-                  <h3 class="title-3">Visibility</h3>
-
-                  <div class="wrapper">
-                    <i class="fa-solid fa-eye-slash"></i>
-
-                    <p class="title-1">10 km</p>
-                  </div>
-                </div>
-
-                <div class="card-sm highlight-card">
-                  <h3 class="title-3">Feels Like</h3>
-
-                  <div class="wrapper">
-                    <i class="fa-solid fa-temperature-three-quarters"></i>
-
-                    <p class="title-1">25&deg;C</p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </section>
 
           <section
@@ -348,217 +211,7 @@
             aria-label="hourly forecast"
             data-hourly-forecast
           >
-            <h2 class="title-2">Today at</h2>
-
-            <div class="slider-container">
-              <ul class="slider-list" data-temp>
-                <li class="slider-item">
-                  <div class="card card-sm slider-card">
-                    <p class="body-3">03 PM</p>
-
-                    <img
-                      src="./assets/weather_icons/01n.png"
-                      alt=""
-                      width="48"
-                      height="48"
-                      loading="lazy"
-                      class="weather-icon"
-                    />
-
-                    <p class="body-3">25&deg;</p>
-                  </div>
-                </li>
-
-                <li class="slider-item">
-                  <div class="card card-sm slider-card">
-                    <p class="body-3">03 PM</p>
-
-                    <img
-                      src="./assets/weather_icons/01n.png"
-                      alt=""
-                      width="48"
-                      height="48"
-                      loading="lazy"
-                      class="weather-icon"
-                    />
-
-                    <p class="body-3">25&deg;</p>
-                  </div>
-                </li>
-
-                <li class="slider-item">
-                  <div class="card card-sm slider-card">
-                    <p class="body-3">03 PM</p>
-
-                    <img
-                      src="./assets/weather_icons/01n.png"
-                      alt=""
-                      width="48"
-                      height="48"
-                      loading="lazy"
-                      class="weather-icon"
-                    />
-
-                    <p class="body-3">25&deg;</p>
-                  </div>
-                </li>
-
-                <li class="slider-item">
-                  <div class="card card-sm slider-card">
-                    <p class="body-3">03 PM</p>
-
-                    <img
-                      src="./assets/weather_icons/01n.png"
-                      alt=""
-                      width="48"
-                      height="48"
-                      loading="lazy"
-                      class="weather-icon"
-                    />
-
-                    <p class="body-3">25&deg;</p>
-                  </div>
-                </li>
-
-                <li class="slider-item">
-                  <div class="card card-sm slider-card">
-                    <p class="body-3">03 PM</p>
-
-                    <img
-                      src="./assets/weather_icons/01n.png"
-                      alt=""
-                      width="48"
-                      height="48"
-                      loading="lazy"
-                      class="weather-icon"
-                    />
-
-                    <p class="body-3">25&deg;</p>
-                  </div>
-                </li>
-
-                <li class="slider-item">
-                  <div class="card card-sm slider-card">
-                    <p class="body-3">03 PM</p>
-
-                    <img
-                      src="./assets/weather_icons/01n.png"
-                      alt=""
-                      width="48"
-                      height="48"
-                      loading="lazy"
-                      class="weather-icon"
-                    />
-
-                    <p class="body-3">25&deg;</p>
-                  </div>
-                </li>
-              </ul>
-
-              <ul class="slider-list" data-wind>
-                <li class="slider-item">
-                  <div class="card card-sm slider-card">
-                    <p class="body-3">03 PM</p>
-
-                    <img
-                      src="./assets/weather_icons/send.png"
-                      alt=""
-                      width="48"
-                      height="48"
-                      loading="lazy"
-                      class="weather-icon"
-                    />
-
-                    <p class="body-3">12 km/h</p>
-                  </div>
-                </li>
-
-                <li class="slider-item">
-                  <div class="card card-sm slider-card">
-                    <p class="body-3">03 PM</p>
-
-                    <img
-                      src="./assets/weather_icons/send.png"
-                      alt=""
-                      width="48"
-                      height="48"
-                      loading="lazy"
-                      class="weather-icon"
-                    />
-
-                    <p class="body-3">12 km/h</p>
-                  </div>
-                </li>
-
-                <li class="slider-item">
-                  <div class="card card-sm slider-card">
-                    <p class="body-3">03 PM</p>
-
-                    <img
-                      src="./assets/weather_icons/send.png"
-                      alt=""
-                      width="48"
-                      height="48"
-                      loading="lazy"
-                      class="weather-icon"
-                    />
-
-                    <p class="body-3">12 km/h</p>
-                  </div>
-                </li>
-
-                <li class="slider-item">
-                  <div class="card card-sm slider-card">
-                    <p class="body-3">03 PM</p>
-
-                    <img
-                      src="./assets/weather_icons/send.png"
-                      alt=""
-                      width="48"
-                      height="48"
-                      loading="lazy"
-                      class="weather-icon"
-                    />
-
-                    <p class="body-3">12 km/h</p>
-                  </div>
-                </li>
-
-                <li class="slider-item">
-                  <div class="card card-sm slider-card">
-                    <p class="body-3">03 PM</p>
-
-                    <img
-                      src="./assets/weather_icons/send.png"
-                      alt=""
-                      width="48"
-                      height="48"
-                      loading="lazy"
-                      class="weather-icon"
-                    />
-
-                    <p class="body-3">12 km/h</p>
-                  </div>
-                </li>
-
-                <li class="slider-item">
-                  <div class="card card-sm slider-card">
-                    <p class="body-3">03 PM</p>
-
-                    <img
-                      src="./assets/weather_icons/send.png"
-                      alt=""
-                      width="48"
-                      height="48"
-                      loading="lazy"
-                      class="weather-icon"
-                    />
-
-                    <p class="body-3">12 km/h</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
+            
           </section>
 
           <footer class="footer">
@@ -595,7 +248,8 @@
       </a>
     </section>
 
-    <script src="./js/app.js" type="module"></script>
+    <!-- <script src="./js/app.js" type="module"></script> -->
+    <script src="./js/route.js" type="module"></script>
   </body>
 </html>
 

@@ -1,6 +1,6 @@
 'use strict';
 
-import {updateWeather, error404} from "./app";
+import {updateWeather, error404} from "./app.js";
 
 const defaultLocation = "#/weather?lat=52.237049&lon=21.017532"
 
@@ -19,14 +19,14 @@ const searchedLocation = query => updateWeather(...query.split("&"))
 const routes = new Map([
     ["/current-location", currentLocation],
     ["/weather", searchedLocation]
-])
+]) //read about!
 
 const checkHash = function(){
     const requestURL = window.location.hash.slice(1)
 
-    requestURL.includes ? requestURL.split("?") : [requestURL];
+    const [route, query] = requestURL.includes ? requestURL.split("?") : [requestURL];
 
-    routes.get(route) ? routes.get(rout)(query): error404
+    routes.get(route) ? routes.get(route)(query): error404()
 }
 
 window.addEventListener('hashchange', checkHash)

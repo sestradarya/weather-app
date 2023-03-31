@@ -10,7 +10,7 @@ export const weekDayNames = [
     'Saturday'
 ];
 
-export const monthName = [
+export const monthNames = [
     'Jan',
     'Feb', 
     'Mar',
@@ -43,8 +43,7 @@ export const getTime = function(timeUnix, timezone){
 }
 
 export const mps_to_kmh = mps => {
-    const mph = mps * 3600;
-    return mph / 1000
+    return mps * 3600 / 1000
 }
 
 export const aqiText = {

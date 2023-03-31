@@ -227,6 +227,13 @@ body {
   font-size: var(--label-2);
 }
 
+.fade-in{animation: fade-in 250ms ease forwards}
+
+@keyframes fade-in {
+  0% { opacity: 0;}
+  100% {opacity: 1;}
+}
+
 /* .search-view,
 .header .btn-primary .span {
   display: none;

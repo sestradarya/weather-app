@@ -1,9 +1,9 @@
 "use strict";
 
-const api_key = "13767618d9e0aac54e79c51b6cbcd953";
+const api_key = "5e32f24a529b28892906b2f0863554de";
 
 export const fetchData = function (URL, callback) {
-  fetch(`${URL}$appid=${api_key}`)
+  fetch(`${URL}&appid=${api_key}`)
     .then((res) => res.json())
     .then((data) => callback(data));
 };
@@ -22,6 +22,6 @@ export const url = {
     return `https://api.openweathermap.org/geo/1.0/reverse?${lat}&${lon}&limit=5`
   },
   geo(query){
-    return `https://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=5`
+    return `http://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=5`
   }
 };
