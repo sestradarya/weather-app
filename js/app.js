@@ -45,7 +45,8 @@ searchField.addEventListener("input", function () {
 
         const items = [];
 
-        for (const { name, lat, lon, country, state } of locations) {
+        try{
+            for (const { name, lat, lon, country, state } of locations) {
           const searchItem = document.createElement("li");
           searchItem.classList.add("view-item");
 
@@ -68,6 +69,11 @@ searchField.addEventListener("input", function () {
             .appendChild(searchItem);
           items.push(searchItem.querySelector("[data-search-toggler]"));
         }
+        } catch{
+            
+        }
+
+        
 
         addEventOnElements(items, "click", function () {
           toggleSearch();
